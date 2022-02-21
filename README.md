@@ -1,3 +1,21 @@
+# New Installation
+
+1. install miniconda and open the conda terminal
+2. cd to the srt-py directory
+3. create the environment
+  ```conda
+  conda config --add channels conda-forge
+  conda create --name srt-py --file srt-py-env.txt
+  activate srt-py
+  ```
+4. run the program
+  ```conda
+  conda develop .
+  python bin/srt_runner.py --config_dir=config
+  ```
+
+***
+
 # SRT-Py
 
 Small Radio Telescope Control Code for Python
